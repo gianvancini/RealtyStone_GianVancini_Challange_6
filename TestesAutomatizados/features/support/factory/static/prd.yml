@@ -1,3 +1,58 @@
 user_for_login:
   account: 'john'
   password: 'demo'
+
+buttons_header_left:
+  about_us: 'buttons_header_left:nth-child(2)'
+  about_us_url: 'https://parabank.parasoft.com/parabank/about.htm'
+
+  services: 'buttons_header_left:nth-child(3)'
+  services_url: 'https://parabank.parasoft.com/parabank/services.htm'
+
+  products: 'buttons_header_left:nth-child(4)'
+  products_url: 'https://www.parasoft.com/products/'
+
+  locations: 'buttons_header_left:nth-child(5)'
+  locations_url: 'https://www.parasoft.com/solutions/'
+
+  admin_page: 'buttons_header_left:nth-child(6)'
+  admin_url: 'https://parabank.parasoft.com/parabank/admin.htm'
+
+buttons_header_right:
+  home: 'buttons_header_right:nth-child(1)>a'
+  home_url: 'https://parabank.parasoft.com/parabank/index.htm'
+
+  about_us_2: 'buttons_header_right:nth-child(2)>a'
+  about_us_2_url: 'https://parabank.parasoft.com/parabank/about.htm'
+
+  contact: 'buttons_header_right:nth-child(3)>a'
+  contact_url: 'https://parabank.parasoft.com/parabank/contact.htm'
+
+buttons_menu_footer:
+  home_footer: 'buttons_menu_footer:nth-child(1)>a'
+  home_footer_url: 'https://parabank.parasoft.com/parabank/index.htm'
+
+  about_us_footer: 'buttons_menu_footer:nth-child(2)>a'
+  about_us_footer_url: 'https://parabank.parasoft.com/parabank/about.htm'
+
+  services_footer: 'buttons_menu_footer:nth-child(3)>a'
+  services_footer_url: 'https://parabank.parasoft.com/parabank/services.htm'
+
+  products_footer: 'buttons_menu_footer:nth-child(4)>a'
+  products_footer_url: 'https://www.parasoft.com/products/'
+
+  locations_footer: 'buttons_menu_footer:nth-child(5)>a'
+  locations_footer_url: 'https://www.parasoft.com/solutions/'
+
+  forum: 'buttons_menu_footer:nth-child(6)>a'
+  forum_url: 'https://forums.parasoft.com/'
+
+  site_map: 'buttons_menu_footer:nth-child(7)>a'
+  site_map_url: 'https://parabank.parasoft.com/parabank/sitemap.htm'
+
+  contact_footer: 'buttons_menu_footer:nth-child(8)>a'
+  contact_footer_url: 'https://parabank.parasoft.com/parabank/contact.htm'
+
+  visit_us: 'button_visit_parasoft'
+  visit_us_url: 'https://www.parasoft.com/' 
+

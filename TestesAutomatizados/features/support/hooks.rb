@@ -2,6 +2,7 @@ Before do
 
 end
 
+# Faz um print da tela caso haja falhe
 After do |scenario|
     #if scenario.failed?
     #    screenshot = Capybara.page.save_screenshot("reports/screenshots/sc.png")
