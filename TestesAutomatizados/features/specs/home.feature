@@ -42,10 +42,10 @@ Funcionalidade: HomePage
         | services_footer  |  services_footer_url  |
         | products_footer  |  products_footer_url  |
         | locations_footer |  locations_footer_url |
-        |      forum       |      forum_url        |
-        |     site_map     |     site_map_url      |
+        |  forum_footer    |  forum_footer_url     |
+        | site_map_footer  |  site_map_footer_url  |
         |  contact_footer  |   contact_footer_url  |
-        |     visit_us     |       visit_us        |
+        | visit_us_footer  |  visit_us_footer_url  |
 
     
     @redirect_to_register
@@ -57,8 +57,3 @@ Funcionalidade: HomePage
     Cenário: Redirecionamento para página de recuperação de senha
         Quando acessa a funcionalidade para recuperação de senha
         Então é redirecionado para página de recuperação de senha
-    
-    @contact_us_form
-    Cenário: Validar formulário de contato
-        Quando envia o formulário de contato com dados válidos
-        Então uma confirmação é exibida

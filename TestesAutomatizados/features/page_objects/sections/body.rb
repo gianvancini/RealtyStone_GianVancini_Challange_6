@@ -5,5 +5,7 @@ module Sections
         element :button_login, 'input.button'
         element :button_forgot_login, '#loginPanel>p:nth-child(2)>a'
         element :button_register, '#loginPanel>p:nth-child(3)>a'
+        element :register_form, '#customerForm'
+        element :forgot_form, '#lookupForm'    
     end
 end

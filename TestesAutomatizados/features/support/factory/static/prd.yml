@@ -2,57 +2,58 @@ user_for_login:
   account: 'john'
   password: 'demo'
 
-buttons_header_left:
-  about_us: 'buttons_header_left:nth-child(2)'
+
+# Links e URLs dos Redirecionamentos
+buttons_header:
+  about_us: 'button_about_us_left'
   about_us_url: 'https://parabank.parasoft.com/parabank/about.htm'
 
-  services: 'buttons_header_left:nth-child(3)'
+  services: 'button_services_left'
   services_url: 'https://parabank.parasoft.com/parabank/services.htm'
 
-  products: 'buttons_header_left:nth-child(4)'
+  products: 'button_products_left'
   products_url: 'https://www.parasoft.com/products/'
 
-  locations: 'buttons_header_left:nth-child(5)'
+  locations: 'button_locations_left'
   locations_url: 'https://www.parasoft.com/solutions/'
 
-  admin_page: 'buttons_header_left:nth-child(6)'
-  admin_url: 'https://parabank.parasoft.com/parabank/admin.htm'
+  admin_page: 'button_admin_page_left'
+  admin_page_url: 'https://parabank.parasoft.com/parabank/admin.htm'
 
-buttons_header_right:
-  home: 'buttons_header_right:nth-child(1)>a'
+  home: 'button_home_right'
   home_url: 'https://parabank.parasoft.com/parabank/index.htm'
 
-  about_us_2: 'buttons_header_right:nth-child(2)>a'
+  about_us_2: 'button_about_us_right'
   about_us_2_url: 'https://parabank.parasoft.com/parabank/about.htm'
 
-  contact: 'buttons_header_right:nth-child(3)>a'
+  contact: 'button_contact_right'
   contact_url: 'https://parabank.parasoft.com/parabank/contact.htm'
 
-buttons_menu_footer:
-  home_footer: 'buttons_menu_footer:nth-child(1)>a'
+buttons_footer:
+  home_footer: 'button_home_footer'
   home_footer_url: 'https://parabank.parasoft.com/parabank/index.htm'
 
-  about_us_footer: 'buttons_menu_footer:nth-child(2)>a'
+  about_us_footer: 'button_about_us_footer'
   about_us_footer_url: 'https://parabank.parasoft.com/parabank/about.htm'
 
-  services_footer: 'buttons_menu_footer:nth-child(3)>a'
+  services_footer: 'button_services_footer'
   services_footer_url: 'https://parabank.parasoft.com/parabank/services.htm'
 
-  products_footer: 'buttons_menu_footer:nth-child(4)>a'
+  products_footer: 'button_products_footer'
   products_footer_url: 'https://www.parasoft.com/products/'
 
-  locations_footer: 'buttons_menu_footer:nth-child(5)>a'
+  locations_footer: 'button_locations_footer'
   locations_footer_url: 'https://www.parasoft.com/solutions/'
 
-  forum: 'buttons_menu_footer:nth-child(6)>a'
-  forum_url: 'https://forums.parasoft.com/'
+  forum_footer: 'button_forum_footer'
+  forum_footer_url: 'https://forums.parasoft.com/'
 
-  site_map: 'buttons_menu_footer:nth-child(7)>a'
-  site_map_url: 'https://parabank.parasoft.com/parabank/sitemap.htm'
+  site_map_footer: 'button_site_map_footer'
+  site_map_footer_url: 'https://parabank.parasoft.com/parabank/sitemap.htm'
 
-  contact_footer: 'buttons_menu_footer:nth-child(8)>a'
+  contact_footer: 'button_contact_footer'
   contact_footer_url: 'https://parabank.parasoft.com/parabank/contact.htm'
 
-  visit_us: 'button_visit_parasoft'
-  visit_us_url: 'https://www.parasoft.com/' 
+  visit_us_footer: 'button_visit_parasoft'
+  visit_us_footer_url: 'https://www.parasoft.com/' 
 

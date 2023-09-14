@@ -12,5 +12,10 @@ module Factory
         def self.static_data(data)
             Static.load_file[data]
         end
+
+        # Recebe duas chaves e retorna um valor.
+        def self.static_data_two data, data2
+            Static.load_file[data][data2]
+        end
     end
 end
