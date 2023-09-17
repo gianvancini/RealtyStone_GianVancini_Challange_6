@@ -2,29 +2,23 @@
 
 @regression
 @user
-Funcionalidade: Usuário
+Funcionalidade: HomePage
     SENDO um usuário do ParaBank
-    QUERO poder fazer login na aplicação
-    PARA acessar as funcionalidades de usuário logado   
+    QUERO utilizar as funcionalidades do Parabank
+    PARA poder transferir, pagar e ver extratos de contas
 
-    Contexto: Estar na home page e fazer o login
+    Contexto: Estar logado na aplicação
         Dado que esteja na página inicial do banco
+        E esteja logado
     
-    @empty_login    
-    Cenário: Fazer login com campos vazios
-        Quando realiza o login com username e pwssword vazios
-        Então exibe a mensagem de campo obrigatório
-
-    @valid_login
-    Cenário: Fazer login válido
-        Quando realiza o login com username e pwssword válidos
-        Então a página de visão geral de contas é apresentada
-    
-    @invalid_login
-    Esquema do Cenário: Fazer login inválido
-        Quando realiza o login com username "<username>" e password "<password>"
-        Então exibe a mensagem "<mensage>"
+    @open_new_account
+    Esquema do Cenário: Abrir uma nova conta
+        Quando abre uma nova conta "<tipo_conta>"
+        E usar o saldo da segunda conta "<conta_sec>"
+        Então exibe a mensagem de abertura de conta
         Exemplos:
-        |   username    |   password    |   message     |
-        |  valid_user   | invalid_user  |invalid_message|
-        | invalid_user  |  valid_user   |invalid_message|
+        | tipo_conta  |  conta_sec |
+        |  checking   |     0      |
+        |  savings    |     1      |
+    
+    

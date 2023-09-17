@@ -53,3 +53,23 @@ Então('é redirecionado para página correta {string}') do |page_url|
     end
     expect(current_url).to eq redirect
 end
+
+
+Quando('acessa a funcionalidade de contato') do
+    @home.header.button_contact_right.click
+end
+  
+E('envia o formulário de contato com dados válidos') do
+    @contact = Factory::Static.static_data('form_contact')
+
+    @home.body.contact_name.set @contact["name"]
+    @home.body.contact_email.set @contact["email"]
+    @home.body.contact_phone.set @contact["phone"]
+    @home.body.contact_message.set @contact["message"]
+
+    @home.body.contact_button.click
+end
+  
+Então('é apresentado uma mensagem de envio com sucesso') do
+    expect(page).to have_content(@contact["success"])
+end

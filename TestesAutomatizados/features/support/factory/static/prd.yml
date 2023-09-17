@@ -57,3 +57,31 @@ buttons_footer:
   visit_us_footer: 'button_visit_parasoft'
   visit_us_footer_url: 'https://www.parasoft.com/' 
 
+form_contact:
+  name: "Paulo" 
+  email: "paulo@aaa.bb"
+  phone: "5487654321"
+  message: "Hello"
+  success: "A Customer Care Representative will be contacting you."
+
+user_login:
+  valid_user: "john"
+  valid_pass: "demo"
+
+  invalid_user: "paulo"
+  invalid_pass: "paulo"
+
+  empty_user: ""
+  empty_pass: ""
+
+  empty_message: "Please enter a username and password."
+  invalid_message: "The username and password could not be verified."
+
+forgot_login:
+  first_name: 'teste'
+  last_name: 'teste'
+  address: 'teste'
+  city: 'teste'
+  state: 'teste'
+  zip_code: 'teste'
+  ssn: 'teste'

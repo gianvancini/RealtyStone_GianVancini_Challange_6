@@ -57,3 +57,9 @@ Funcionalidade: HomePage
     Cenário: Redirecionamento para página de recuperação de senha
         Quando acessa a funcionalidade para recuperação de senha
         Então é redirecionado para página de recuperação de senha
+
+    @contact
+    Cenário: Entrar em contato
+        Quando acessa a funcionalidade de contato
+        E envia o formulário de contato com dados válidos
+        Então é apresentado uma mensagem de envio com sucesso

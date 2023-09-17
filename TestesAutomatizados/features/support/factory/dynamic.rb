@@ -2,14 +2,20 @@ require 'faker'
 
 module Factory
 
-    # Geração de massa de dados dinamica
+    # Massa de dados dinamica
     class Dynamic
 
-        # Retorna um Hash com email e messagem.
-        def self.message_for_contact
+        # Retorna um Hash com dados para registro
+        def self.valid_register
             {
-                email: Faker::Internet.email,
-                message: Faker::Lorem.paragraph
+                first_name: Faker::Name.first_name,
+                last_name: Faker::Name.last_name,
+                address: Faker::Address.street_address,
+                city: Faker::Address.city,
+                state: Faker::Address.state,
+                zip_code: Faker::Address.zip_code,
+                phone: Faker::PhoneNumber.cell_phone,
+                ssn: Faker::IDNumber.valid,
             }
         end
     end
