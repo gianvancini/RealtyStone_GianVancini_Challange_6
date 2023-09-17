@@ -85,3 +85,12 @@ forgot_login:
   state: 'teste'
   zip_code: 'teste'
   ssn: 'teste'
+
+amount: 100
+
+transaction:
+  id: '12145'
+  date: '12-11-2022'
+  amount: '300'
+  between_date: '12-01-2022'
+  and_date: '12-30-2022'

@@ -16,6 +16,9 @@ module Factory
                 zip_code: Faker::Address.zip_code,
                 phone: Faker::PhoneNumber.cell_phone,
                 ssn: Faker::IDNumber.valid,
+                account: Faker::Bank.account_number(digits: 5),
+                amount: Faker::Number.number(digits: 3),
+                down_p: Faker::Number.number(digits: 2)
             }
         end
     end

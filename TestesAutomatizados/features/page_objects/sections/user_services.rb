@@ -10,12 +10,13 @@ module Sections
         element :update_contact, '#leftPanel>ul>li:nth-child(6)>a'
         element :request_loan, '#leftPanel>ul>li:nth-child(7)>a'
         element :log_out, '#leftPanel>ul>li:nth-child(8)>a'
+        element :right_panel, '#rightPanel'
 
         # Abrir nova conta
         element :account_type, '#type'
         element :account_sender, '#fromAccountId' 
         element :account_open_button, 'input[value="Open New Account"]'
-        element :account_open_success, '#rightPanel>div>div>h1' 
+        element :message_success, '#rightPanel>div>div>h1' 
 
         # Resumo das contas
         element :overview_account_one, '#accountTable>tbody>tr:nth-child(1)>td:nth-child(1)>a'
@@ -26,6 +27,7 @@ module Sections
         element :transfer_from_account, "#fromAccountId"
         element :transfer_to_account, "#toAccountId"
         element :transfer_button, 'input[value="Transfer"]'
+        element :div_success, 'div[ng-if="showResult"]'
 
         # Pagamentos
         element :payee_name, 'input[name="payee.name"]'
@@ -38,6 +40,7 @@ module Sections
         element :payee_verify_account, 'input[name="verifyAccount"]'
         element :payee_amount, 'input[name="amount"]'
         element :payee_button, 'input[value="Send Payment"]'
+        element :payee_success, 'div[ng-show="showResult"]'
 
         # Encontrar TRansaçoes
         element :find_select_account, '#accountId'
@@ -65,6 +68,7 @@ module Sections
         element :loan_amount, '#amount'
         element :loan_down, '#downPayment'
         element :loan_from_account, '#fromAccountId'
-        element :update_button, 'input[value="Apply Now"]'
+        element :loan_button, 'input[value="Apply Now"]'
+
     end
 end

@@ -3,7 +3,6 @@ require_relative '../sections/register_forgot'
 
 module Pages
     class Account < SitePrism::Page
-        set_url '/'
         section :body, Sections::Body, 'body'   
         section :register_forgot, Sections::Register_Forgot, '#rightPanel' 
 
