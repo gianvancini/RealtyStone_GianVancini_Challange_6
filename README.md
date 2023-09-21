@@ -58,9 +58,14 @@ Também podem ser executados todos os testes de uma vez só, digitando no termin
 ```
 Porém, o servidor do site Parabank parece ter problemas com muitas requisições em um curto intervalo de tempo. Se for executado os testes como foi dividido acima, é executado com sucesso, mas se executado um teste de regressão, o servidor retorna vários erros 503.
 
+Dentro da pasta TestesAutomatizados > Features > Specs, podem ser visualizado as tags dos testes individuais, assim, pode ser executado qualquer teste individualmente, como por exemplo:
+```bash
+    cucumber -p default --tags "@valid_login"
+```
+
 ## Resultados
 
-Os resultados dos testes podem sem verificados nos anexos do plano de teste ou na planilha Parabank, ambos dentro da pasta [PlanoDeTeste](https://github.com/gianvancini/RealtyStone_GianVancini_Challange_6/tree/main/PlanoDeTeste) deste repositório. Também pode ser verificado as issues levantadas durante todo o processo, acessando o projeto dentro deste repositório, ou este [Link](https://github.com/users/gianvancini/projects/3/).
+Os resultados dos testes podem sem verificados nos anexos do plano de teste ou na planilha Parabank, ambos dentro da pasta [PlanoDeTeste](https://github.com/gianvancini/RealtyStone_GianVancini_Challange_6/tree/main/PlanoDeTeste) deste repositório. Também pode ser verificado as issues levantadas durante todo o processo, acessando o projeto dentro deste repositório, ou clicando [aqui](https://github.com/users/gianvancini/projects/3/).
 
 ## Autor
 
