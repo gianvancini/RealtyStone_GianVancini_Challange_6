@@ -52,7 +52,7 @@ Capybara.register_driver :my_firefox do |app|
 end
 
 if ENV['BROWSER'] == 'chrome'
-    Capybara.default_driver = :my_chrome
+    Capybara.default_driver = :my_chrome 
 elsif ENV['BROWSER'] == 'firefox'
     Capybara.default_driver = :my_firefox
 else
