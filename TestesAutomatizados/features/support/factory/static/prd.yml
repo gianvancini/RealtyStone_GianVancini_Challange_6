@@ -86,7 +86,8 @@ forgot_login:
   zip_code: 'teste'
   ssn: 'teste'
 
-amount: 100
+amount: '100'
+amount_negativo: "-100"
 
 transaction:
   id: '12145'
@@ -94,3 +95,39 @@ transaction:
   amount: '300'
   between_date: '12-01-2022'
   and_date: '12-30-2022'
+
+messages_error:
+  first_name: 'First name is required.'
+  last_name: 'Last name is required.'
+  address: 'Address is required.'
+  city: 'City is required.'
+  state: 'State is required.'
+  zip_code: 'Zip Code is required.'
+  ssn: 'Social Security Number is required.'
+
+  username: 'Username is required.'
+  password: 'Password is required.'
+  confirm: 'Password confirmation is required.'
+
+  duplicidade: 'This username already exists.'
+
+invalid_register:
+  number: '12345'
+  string: 'abcde'
+  message_numbers: 'Este campo deve ser preenchido com números' 
+  message_strings: 'Este campo deve ser preenchido com letras' 
+
+
+invalid_contact:
+  name: "a" 
+  email: "a"
+  phone: "a"
+  message: "a"
+  error: "Os campos devem ser preenchidos com dados válidos. 
+          O nome deve ter ao menos 5 caracteres.
+          Deve ser um email válido.
+          A mensagem deve ter pelo menos 50 caracteres."
+
+account_overview:
+  mounth: '12' #dezembro
+  type: '1' #crédito

@@ -34,7 +34,31 @@ Capybara.register_driver :my_chrome do |app|
     Capybara::Selenium::Driver.new(app, browser: :chrome, options: options)
 end
 
-Capybara.default_driver = :my_chrome
+Capybara.register_driver :my_firefox do |app|
+    options = Selenium::WebDriver::Firefox::Options.new
+
+    options.add_argument('--private')
+    options.add_argument('--ignore-ssl-errors=true')
+    options.add_argument('--accept-insecure-certs=true')
+
+    if ENV['HEADLESS']
+        options.add_argument('--headless')
+        options.add_argument('--disable-site-isolation-trials')
+    end
+
+    Capybara::Selenium::Driver.new(app, browser: :firefox, options: options).tap do |driver|
+        driver.browser.manage.window.maximize
+    end
+end
+
+if ENV['BROWSER'] == 'chrome'
+    Capybara.default_driver = :my_chrome
+elsif ENV['BROWSER'] == 'firefox'
+    Capybara.default_driver = :my_firefox
+else
+    raise "Navegador não suportado: #{ENV['BROWSER']}"
+end
+
 Capybara.app_host = URL
 Capybara.default_max_wait_time = 10
 

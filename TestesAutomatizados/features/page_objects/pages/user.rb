@@ -5,7 +5,6 @@ module Pages
     class User < SitePrism::Page
         section :body, Sections::Body, 'body' 
         section :user_services, Sections::User_Services, 'body' 
-        
-
+    
     end
 end

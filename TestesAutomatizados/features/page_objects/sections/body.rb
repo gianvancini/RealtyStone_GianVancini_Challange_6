@@ -20,6 +20,11 @@ module Sections
 
         #Elementos usuário logado
         element :login_success, '#leftPanel>h2'
-        element :login_error, '.error'
+        element :login_error, '.error'       
+        
+        #Elementos admin Page
+        element :button_clean, 'button[value="CLEAN"]'
+        element :button_initialize, 'button[value="INIT"]'
+        element :message_bd, '#rightPanel>p>b'
     end
 end

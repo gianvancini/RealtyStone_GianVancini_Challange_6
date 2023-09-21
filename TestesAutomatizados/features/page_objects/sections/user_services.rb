@@ -21,6 +21,10 @@ module Sections
         # Resumo das contas
         element :overview_account_one, '#accountTable>tbody>tr:nth-child(1)>td:nth-child(1)>a'
         element :overview_details, "#rightPanel>div>div:nth-child(1)>h1"
+        element :overview_mounth, "#month"
+        element :overview_type, "#transactionType"
+        element :overview_go_button, 'input[value="Go"]'
+        element :overview_results, '#transactionTable>tbody>tr>td:nth-child(1)'
 
         # Transferir fundos
         element :transfer_amount, '#amount'
@@ -63,6 +67,12 @@ module Sections
         element :update_zip_code, '#customer\.address\.zipCode'
         element :update_phone, '#customer\.phoneNumber'
         element :update_button, 'input[value="Update Profile"]'
+        element :update_first_name_error, '#rightPanel>div>div>form>table>tbody>tr:nth-child(1)>td:nth-child(3)>span'
+        element :update_last_name_error, '#rightPanel>div>div>form>table>tbody>tr:nth-child(2)>td:nth-child(3)>span'
+        element :update_address_error, '#rightPanel>div>div>form>table>tbody>tr:nth-child(3)>td:nth-child(3)>span'
+        element :update_city_error, '#rightPanel>div>div>form>table>tbody>tr:nth-child(4)>td:nth-child(3)>span'
+        element :update_state_error, '#rightPanel>div>div>form>table>tbody>tr:nth-child(5)>td:nth-child(3)>span'
+        element :update_zip_code_error, '#rightPanel>div>div>form>table>tbody>tr:nth-child(6)>td:nth-child(3)>span'
 
         # Emprestimo
         element :loan_amount, '#amount'

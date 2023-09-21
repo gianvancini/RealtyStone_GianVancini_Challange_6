@@ -14,6 +14,18 @@ module Sections
         element :register_password, '#customer\.password'
         element :register_confirm_password, '#repeatedPassword'
         element :register_form_button, 'input[value="Register"]'
+        element :register_first_name_error, '#customer\.firstName\.errors'
+        element :register_last_name_error, '#customer\.lastName\.errors'
+        element :register_address_error, '#customer\.address\.street\.errors'
+        element :register_city_error, '#customer\.address\.city\.errors'
+        element :register_state_error, '#customer\.address\.state\.errors'
+        element :register_zip_code_error, '#customer\.address\.zipCode\.errors'
+        element :register_phone_error, '#customer\.phoneNumber\.errors'
+        element :register_ssn_error, '#customer\.ssn\.errors'
+        element :register_username_error, '#customer\.username\.errors'
+        element :register_password_error, '#customer\.password\.errors'
+        element :register_confirm_password_error, '#repeatedPassword\.errors'
+        element :register_phone_error, '#customer\.phoneNumber\.errors'
 
         #Elementos da recuperaçao de senha
         element :forgot_first_name, '#firstName'
@@ -25,5 +37,12 @@ module Sections
         element :forgot_ssn, '#ssn'
         element :forgot_form_button, 'input[value="Find My Login Info"]'
         element :forgot_success, '#rightPanel>h1'
+        element :forgot_first_name_error, '#firstName\.errors'
+        element :forgot_last_name_error, '#lastName\.errors'
+        element :forgot_address_error, '#address\.street\.errors'
+        element :forgot_city_error, '#address\.city\.errors'
+        element :forgot_state_error, '#address\.state\.errors'
+        element :forgot_zip_code_error, '#address\.zipCode\.errors'
+        element :forgot_ssn_error, '#ssn\.errors'
     end
 end

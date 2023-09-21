@@ -1,4 +1,5 @@
 default: --format pretty -p prd -p chrome -p html
+other: --format pretty -p prd -p firefox -p html
 
 # Reports
 html: --format html --out=reports/report.html
@@ -8,6 +9,7 @@ prd: ENVIRONMENT="prd"
 
 # Browsers
 chrome: BROWSER="chrome" 
+firefox: BROWSER="firefox" 
 
 # Visual Mode
 headless: HEADLESS="true"

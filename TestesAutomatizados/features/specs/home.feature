@@ -63,3 +63,10 @@ Funcionalidade: HomePage
         Quando acessa a funcionalidade de contato
         E envia o formulário de contato com dados válidos
         Então é apresentado uma mensagem de envio com sucesso
+    
+    @ignore
+    @invalid_contact
+    Cenário: Entrar em contato com dados inválidos
+        Quando acessa a funcionalidade de contato
+        E envia o formulário de contato com dados inválidos
+        Então é apresentado uma mensagem de erro ao enviar contato
